@@ -13,6 +13,8 @@ Flow Roulette 是一款结合了任务列表、随机抽取（轮盘）与专注
 
 ---
 
+![软件界面截图](./assets/screenshot.png)
+
 ## ✨ 主要功能
 
 - **✅ 任务管理 (`TaskList` & `TaskInput`)**: 轻松添加、编辑和删除待办事项。
