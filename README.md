@@ -13,7 +13,7 @@ Flow Roulette 是一款结合了任务列表、随机抽取（轮盘）与专注
 
 ---
 
-![软件界面截图](./assets/screenshot.png)
+![软件界面截图](./assets/screenshot.jpg)
 
 ## ✨ 主要功能
 
