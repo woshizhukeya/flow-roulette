@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ── Tailwind v4 Theme Customization ── */
+@theme {
+    --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ── Base Styles ── */
+body {
+    background-color: transparent;
+    margin: 0;
+    font-family: var(--font-sans);
+    color: #f8fafc;
+}
+
+/* ── Custom Scrollbar for Glassmorphism ── */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+/* ── Glassmorphism Utilities ── */
+@utility glass-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+@utility glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+@utility text-glow {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
